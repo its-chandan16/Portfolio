@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77241ed5bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" width="100px" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Chandan</span></h1>
+                <h3>Kumar from Darbhanga</h3>
+                <h2>Bihar.</h2>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+            <div class="images">
+                <img src="images/chandan.jpg" class="chandan">
+            </div>
+        </div>
+    </div>
+    <!-----------  about      -------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/chandan.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic final-year IT student with hands-on experience in frontend development, showcasing expertise in HTML, CSS,
+                        JavaScript and frameworks like React. Proficient in Java programming with a solid understanding of Object-Oriented
+                        Programming (OOP) principles. Ready to embark on a dynamic career journey, combining frontend proficiency, Java
+                        foundation and a passion for technology to make a significant contribution in the IT industry.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><h4>HTML</h4>
+                                <span class="bar"><span class="html"></span></span>
+                            </li>
+                            <li><h4>CSS</h4>
+                                <span class="bar"><span class="css"></span></span>
+                            </li>
+                            <li><h4>JavaScript</h4>
+                                <span class="bar"><span class="javascript"></span></span>
+                            </li>
+                            <li><h4>Java</h4>
+                                <span class="bar"><span class="java"></span></span>
+                            </li>
+                            <li><h4>MySql</h4>
+                                <span class="bar"><span class="mysql"></span></span>
+                            </li> 
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><h4><span>2024 - current</span><br>Frontend Developer Internship at CodeAlpha</h4></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><h4><span>2025</span><br>B.Tech from Netaji Subhash Engineering College<br>cgpa 8.23</h4></li>
+                            <li><h4><span>2020</span><br>12th from MLSM College Darbhanga<br>percentage 83.6</h4></li>
+                            <li><h4><span>2018</span><br>10th from High School Mahinam Pohaddi<br>percentage 71.2</h4></li>
+                        </ul>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------- services ---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Software Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti adipisci aliquid facilis nostrum totam laudantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti adipisci aliquid facilis nostrum totam laudantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti adipisci aliquid facilis nostrum totam laudantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------- Portfolio ----------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented peopke around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented peopke around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented peopke around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------Contact -------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ck16015@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-8102315298</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100050016009764&mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Chandan26824100"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/its_chandan16"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chandan-kumar-782232220"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/its-chandan16"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Chandan. Made with <i class="fa-solid fa-heart"></i> by Chandan</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
